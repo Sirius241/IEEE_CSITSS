@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--STYLE SHEET-->
+<link rel="stylesheet" href="style.css">
+<title>CSITSS-2023</title>
+</head>
+<body>
+<!--Navigation bar-->
+<!--HERE I HAVE CREATED A SIMPLE NAVIGATION BAR-->
+<nav>    
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">COMMITTEE</a></li>
+        <li><a href="#">TECHNICAL PROGRAM</a></li>
+        <li><a href="#">REGISTRATION</a></li>
+        <li><a href="#">CONTACT US</a></li>
+    </ul>    
+</nav>
+<div class="wrapper">
+    <div class="left-buttons">
+        <button class="vertical-button">SUBMIT PAPER</button>
+        <button class="vertical-button">TIMELINE</button>
+        <button class="vertical-button">DOWNLOAD BROCHURE</button>
+    </div>
+    <div class="center-image-container">
+        <div class="container">
+            <img src="rv3.jpg"/>
+        </div>
+        <div class="container2">
+            <button class="image-button">
+                <img src="logo_rvce_ieee3.png" alt="Button 1">
+            </button>
+            <button class="image-button">
+                <img src="IEEEBangalorevector3.png" alt="Button 2">
+            </button>
+            <button class="image-button">
+                <img src="logo_IEEE_Main.png" alt="Button 3">
+            </button>
+        </div>
+    </div>
+</div>
+<!--to remind the users of most important dates-->
+<!--With the use of marquee tag-->
+<marquee width="100%" direction="left" height="30px">
+Submission of Full-length Manuscript(opens from):26th June 2023&ensp;Last date for Registration:6th October 2023
+</marquee>
+<p class="text">
+    WELCOME TO CSITSS-2023</p>
+<p class="text1">
+    7th International Conference on Computational Systems and Information Technology for Sustainable Solutions<br>
+    Conference Record #60515<br>
+    Organized by<br>
+    RV College of Engineering®<br>
+</p>
+<!--About CSITSS-->
+<div class="container3">
+    <h1>ABOUT CSITSS</h1><br><br>
+    <div>
+        <img src="logo.jpg" class="imgright">
+        <div class="divleft">
+ 7th International Conference on "Computational Systems and
+ Information Technology for Sustainable Solutions [CSITSS — 2023]"
+ focuses on bringing together leading academicians, scientists,
+ researchers, industry representatives, postdoctoral fellows
+ and research scholars around the world to share their knowledge and
+ research expertise in Renewable Energy, Robotics, Computing,
+ Communication, E-mobility, Embedded Systems, (R2C2E2) from 2nd
+ to 4th, November 2023.
+ The conference has been successfully organised for the past six years
+ with participants from all over India and abroad. 
+ All peer-reviewed, selected and presented papers from the
+ conference will be submitted for possible inclusion in IEEE digital 
+ library.The present version of the CSITSS-2023 aims to achieve higher
+ standards by attracting original research works in the domain of
+ R2C2E2.International speakers will deliver keynote talks on the latest 
+ technologies in these domains.<br>
+ The CSITSS-2023 ensures to provide a
+ platform for researchers around the<br>
+ globe for knowledge 
+ exchange and networking.</div>
+</div>   
+</div>
+<br><br><br>
+<!--IMPORTANT DATES TIMELINE-->
+<h2>IMPORTANT DATES</h2>
+<div class="timeline">
+    <div class="container4 left">
+      <div class="content">
+        <h2>26th June 2023</h2>
+        <p>Submission of Full-length Manuscript(opens from)</p>
+      </div>
+    </div>
+    <div class="container4 right">
+      <div class="content">
+        <h2>5th August 2023</h2>
+        <p>Last date to submit Full-length Manuscript</p>
+      </div>
+    </div>
+    <div class="container4 left">
+      <div class="content">
+        <h2>24th September 2023</h2>
+        <p>Submission of Camera-ready Manuscript and Copyright Form</p>
+      </div>
+    </div>
+    <div class="container4 right">
+      <div class="content">
+        <h2>6th October 2023</h2>
+        <p>Last Date for Registration</p>
+      </div>
+    </div>
+    <div class="container4 left">
+        <div class="content">
+          <h2>2nd November 2023</h2>
+          <p>Pre-Conference Tutorial</p>
+        </div>
+    </div>
+    <div class="container4 right">
+        <div class="content">
+          <h2>2nd-4th November 2023</h2>
+          <p>Conference Dates</p>
+        </div>
+      </div>
+  </div>
+  <br><br>
+  <!--Gallery carousel-->
+  <h2>GALLERY</h2>
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="img1.JPEG" alt="Image 1">
+      <img src="img2.jpeg" alt="Image 2">
+      <img src="img3.jpeg" alt="Image 3">
+    </div>
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlide(slideIndex);
+
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.carousel img');
+      if (index >= slides.length) {
+        slideIndex = 0;
+      } else if (index < 0) {
+        slideIndex = slides.length - 1;
+      }
+
+      const offset = -slideIndex * 100;
+      document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+      showSlide(++slideIndex);
+    }
+
+    function prevSlide() {
+      showSlide(--slideIndex);
+    }
+
+    setInterval(nextSlide, 3000); // Automatically switch to the next slide every 3 seconds
+  </script>
+  <br><br><br>
+  <!--location:google map-->
+<h2>VENUE</h2>
+<h2>It's easy to locate us!</h2>
+  <div class="container5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7509397589747!2d77.49612627494258!3d12.923722787387204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ee159ba3729%3A0x75a3463d510cf26e!2sR.%20V.%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1690303958161!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </body>
+  </html>

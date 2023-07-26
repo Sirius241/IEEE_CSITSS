@@ -1,0 +1,309 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing :border-box;
+    }
+    /*navigation bar styling*/
+    nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-color: white;
+    background-image: url("https://i.ibb.co/pzcZmKs/Untitled-design-5.png");
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: left;
+    }
+    nav ul{
+    float: right;
+    }
+    nav li{
+    display: inline-block;
+    list-style: none;
+    }
+    nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: black;
+    text-decoration: none;
+    }
+    nav li a:hover{
+    color:grey;
+    transition: all 0.4s ease 0s;
+    }
+    .wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 100%;
+    }
+    .center-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .container img {
+    width: 1000px;
+    height: 505px;
+    }
+    .text{
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 20px;
+    color:black;
+    font-size: 50px;
+    }
+    .text1{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    color:black;
+    font-size: 30px;
+    }
+    .image-button{
+    margin: 10px; 
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    }
+    .image-button:hover,
+    .image-button:focus{
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+    }
+    .image-button:hover{
+    transform: translateY(-1px);
+    }
+    .image-button:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+    }
+    .right-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    }
+    /* Align the buttons vertically */
+    .left-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    }
+.vertical-button {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 10px;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.vertical-button:active {
+  background-color: #006AE8;
+}
+
+.vertical-button:hover {
+  background-color: #1C84FF;
+}
+marquee{
+    font-size: 25px;
+    color: #006AE8;
+}
+.container3 {
+      max-width:auto; 
+      margin: 0; 
+      padding: 20px; 
+    }
+
+    .imgright {
+      float: right; 
+      width: 500px; 
+      margin-left:0px; 
+    }
+
+    .divleft {
+      text-align: justify;
+      font-size:25px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+/*timeline styling*/
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color:black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+.container4 {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container4::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  
+  .container4 {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+ 
+  .container4::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  
+  .right {
+  left: 0%;
+  }
+}
+h2{
+    color: blue;
+    text-align: center;
+}
+/*carousel*/
+.carousel-container {
+      width: 800px; 
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: auto;
+    }
+    .container5{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
