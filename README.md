@@ -19,5 +19,7 @@ GOOGLE MAP(VENUE)
 ![Screenshot 2023-07-26 214118](https://github.com/Sirius241/IEEE_CSITSS/assets/130964012/46d05b48-f716-4019-9126-11a62082ed6d)
 WATCH THE VIDEO TO SEE THE COMPLETE WEBSITE
 https://github.com/Sirius241/IEEE_CSITSS/assets/130964012/8bfb0aa1-428a-44d3-a7b8-4173fd8c970e
+Images used in creating website is also uploaded
+
 
 
